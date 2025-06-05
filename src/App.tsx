@@ -14,14 +14,27 @@ const generateRandomColour = () => {
   return output;
 }
 
+const clickedFunction: PointerEventHandler = (event: React.PointerEvent) => {
+  const clickedColour = event.currentTarget.attributes.getNamedItem("fill")?.nodeValue;
+  if (clickedColour) {
+    alert(`You just clicked the segment with the colour ${clickedColour}`);
+  }
+}
+
 const demodata: DataSet[] = [
   {
     value: Math.round(Math.random() * 100),
-    colour: generateRandomColour()
+    colour: generateRandomColour(),  
+    events: {
+      onPointerUp: clickedFunction
+    }
   },
   {
     value: Math.round(Math.random() * 100),
-    colour: generateRandomColour()
+    colour: generateRandomColour(),
+    events: {
+      onPointerUp: clickedFunction
+    }
   }
 ];
 
@@ -38,9 +51,12 @@ const App = () => {
   const [svgProps, setSvgProps] = useState(demoProps);
  
   const addMoreData = () => {
-    const newEntry = {
+    const newEntry: DataSet = {
       value: Math.round(Math.random() * 100),
-      colour: generateRandomColour()
+      colour: generateRandomColour(),
+      events: {
+        onPointerUp: clickedFunction
+      }
     };
     setData([ // with a new array
       ...data, // that contains all the old items
@@ -85,6 +101,12 @@ const App = () => {
     <div className="app-container">
       <h1>Simple-as-pie Demo</h1>      
       
+      <div>
+        <p>This was built using <a href="https://github.com/Arad1el/simple-as-pie/tree/v2.1.3">Simple-As-Pie v2.1.3</a></p>
+        <p>Feel free to play around with the parameters for the segments, or adding and deleting them.</p>
+        <p>Pointer Up events are now included, so click on a segment to see that in action</p>
+      </div>
+
       <div className="svg-props">
         <h2>Svg properties</h2>
         <div className="svg-prop-inputs">
