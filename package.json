@@ -15,7 +15,7 @@
     "react-dom": "^19.0.0",
     "react-scripts": "5.0.1",
     "sass": "^1.84.0",
-    "simple-as-pie": "^2.1.3",
+    "simple-as-pie": "file:simple-as-pie-v2.2.0.tgz",
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },

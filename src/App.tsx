@@ -1,4 +1,4 @@
-import React, { PointerEventHandler, useState } from 'react';
+import React, { useState } from 'react';
 import './App.scss';
 import { PieChart, DataSet } from 'simple-as-pie';
 
@@ -14,11 +14,8 @@ const generateRandomColour = () => {
   return output;
 }
 
-const clickedFunction: PointerEventHandler = (event: React.PointerEvent) => {
-  const clickedColour = event.currentTarget.attributes.getNamedItem("fill")?.nodeValue;
-  if (clickedColour) {
-    alert(`You just clicked the segment with the colour ${clickedColour}`);
-  }
+const clickedFunction = (event: React.PointerEvent, data: DataSet) => {
+    alert(`You just clicked the segment with the colour ${data.colour}`);
 }
 
 const demodata: DataSet[] = [
@@ -102,7 +99,8 @@ const App = () => {
       <h1>Simple-as-pie Demo</h1>      
       
       <div>
-        <p>This was built using <a href="https://github.com/Arad1el/simple-as-pie/tree/v2.1.3">Simple-As-Pie v2.1.3</a></p>
+        <p>This was built using <a href="https://github.com/Arad1el/simple-as-pie/tree/v2.2.0">Simple-As-Pie v2.2.0</a></p>
+        <p><a href="https://github.com/Arad1el/simple-as-pie-demo-page">View the source code for this page</a></p>
         <p>Feel free to play around with the parameters for the segments, or adding and deleting them.</p>
         <p>Pointer Up events are now included, so click on a segment to see that in action</p>
       </div>

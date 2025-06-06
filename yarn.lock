@@ -8787,10 +8787,9 @@ signal-exit@^4.0.1:
   resolved "https://registry.yarnpkg.com/signal-exit/-/signal-exit-4.1.0.tgz#952188c1cbd546070e2dd20d0f41c0ae0530cb04"
   integrity sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==
 
-simple-as-pie@^2.1.3:
-  version "2.1.3"
-  resolved "https://registry.yarnpkg.com/simple-as-pie/-/simple-as-pie-2.1.3.tgz#92d7c369bb786893b26ae539eef6855d37ebfa43"
-  integrity sha512-PBA7M90nw4/Wjd8IPzjkVfRwIuFebdprmbCB6lWMLoJW4Q4uXd+IiJZCh323DjXm2f+QcsHiVFqelgM9q/Mn5w==
+"simple-as-pie@file:simple-as-pie-v2.2.0.tgz":
+  version "2.2.0"
+  resolved "file:simple-as-pie-v2.2.0.tgz#8e873ca5ce85919d29628dd0c09a3408a6979d1d"
   dependencies:
     "@types/react" "^19.0.10"
 
