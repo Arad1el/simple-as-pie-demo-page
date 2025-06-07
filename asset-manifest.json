@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/simple-as-pie-demo-page/static/css/main.fc48a65b.css",
-    "main.js": "/simple-as-pie-demo-page/static/js/main.b49dbea0.js",
+    "main.js": "/simple-as-pie-demo-page/static/js/main.8ae30afc.js",
     "static/js/453.61ae536f.chunk.js": "/simple-as-pie-demo-page/static/js/453.61ae536f.chunk.js",
     "index.html": "/simple-as-pie-demo-page/index.html",
     "main.fc48a65b.css.map": "/simple-as-pie-demo-page/static/css/main.fc48a65b.css.map",
-    "main.b49dbea0.js.map": "/simple-as-pie-demo-page/static/js/main.b49dbea0.js.map",
+    "main.8ae30afc.js.map": "/simple-as-pie-demo-page/static/js/main.8ae30afc.js.map",
     "453.61ae536f.chunk.js.map": "/simple-as-pie-demo-page/static/js/453.61ae536f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fc48a65b.css",
-    "static/js/main.b49dbea0.js"
+    "static/js/main.8ae30afc.js"
   ]
 }
