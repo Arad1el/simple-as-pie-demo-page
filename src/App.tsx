@@ -117,7 +117,7 @@ const App = () => {
               <h1>Simple-as-pie Demo</h1>
             </Grid>          
             <Grid>
-              <p>This was built using <a href="https://github.com/Arad1el/simple-as-pie/tree/v2.2.4">Simple-As-Pie v2.2.4</a></p>
+              <p>This was built using <a href="https://github.com/Arad1el/simple-as-pie/tree/v2.2.7">Simple-As-Pie v2.2.7</a></p>
               <p><a href="https://github.com/Arad1el/simple-as-pie-demo-page">View the source code for this page</a></p>
               <p>Feel free to play around with the parameters for the segments, or adding and deleting them.</p>
               <p>Pointer Up events are now included, so click on a segment to see that in action</p>
